@@ -1,11 +1,10 @@
 Package: plotr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Simple Plots for Scientific Reporting
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Enzo Gomes
+Maintainer: Enzo Gomes <enzo03gomes@gmail.com>
+Description: Package with plotting tools to make standardizing aesthetics within group projects easier 
+License: GNU General Public License v3.0
 Encoding: UTF-8
 LazyData: true
