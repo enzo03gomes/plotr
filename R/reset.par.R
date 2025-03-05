@@ -1,4 +1,9 @@
 #' Reset graphical parameters to default
+#'
+#' @description
+#' Resets graphical parameters to default values without closing the graphics device.
+#'
+#'
 #' @export
 
 reset.par = function(){

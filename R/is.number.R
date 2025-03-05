@@ -1,4 +1,9 @@
-#' Check if vector is cohersible to numeric
+#' Test if variable contains numbers
+#'
+#' @description
+#' Check if vector is coercible to numeric.
+#'
+#'
 #'
 #' @param x vector to analyse
 #' @export

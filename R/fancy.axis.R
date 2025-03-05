@@ -1,5 +1,9 @@
 #' Plot axis with rug
 #'
+#' @description
+#' Plots axis with rugs and custom tick labels seamlessly.
+#'
+#'
 #' @param side which side to plot the axis
 #' @param space.main spacing between main ticks
 #' @param tk.main placement of main ticks. Overrides space.main

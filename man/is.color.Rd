@@ -2,7 +2,7 @@
 % Please edit documentation in R/is.color.R
 \name{is.color}
 \alias{is.color}
-\title{Check if all values in vector are valid colors}
+\title{Test color validity}
 \usage{
 is.color(color)
 }
@@ -13,5 +13,5 @@ is.color(color)
 TRUE if all elements can be translated into an RGB color, FALSE otherwise
 }
 \description{
-Check if all values in vector are valid colors
+Check if all values in vector are coercible to RGB.
 }

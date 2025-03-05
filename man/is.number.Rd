@@ -2,7 +2,7 @@
 % Please edit documentation in R/is.number.R
 \name{is.number}
 \alias{is.number}
-\title{Check if vector is cohersible to numeric}
+\title{Test if variable contains numbers}
 \usage{
 is.number(x)
 }
@@ -10,5 +10,5 @@ is.number(x)
 \item{x}{vector to analyse}
 }
 \description{
-Check if vector is cohersible to numeric
+Check if vector is coercible to numeric.
 }

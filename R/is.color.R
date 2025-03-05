@@ -1,4 +1,8 @@
-#' Check if all values in vector are valid colors
+#' Test color validity
+#'
+#' @description
+#' Check if all values in vector are coercible to RGB.
+#'
 #'
 #' @param color vector of colors to test
 #' @return TRUE if all elements can be translated into an RGB color, FALSE otherwise

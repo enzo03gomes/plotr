@@ -33,5 +33,5 @@ fancy.axis(
 \item{tk.lab}{labels for main ticks}
 }
 \description{
-Plot axis with rug
+Plots axis with rugs and custom tick labels seamlessly.
 }
