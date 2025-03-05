@@ -3,7 +3,7 @@
 #' @description
 #' Converts a vector of HEX values to their respective black and white variants, also in HEX.
 #'
-#' @param color
+#' @param color vector of HEX
 #'
 #' @export
 

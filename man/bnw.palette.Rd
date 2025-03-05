@@ -7,7 +7,7 @@
 bnw.palette(color)
 }
 \arguments{
-\item{color}{}
+\item{color}{vector of HEX}
 }
 \description{
 Converts a vector of HEX values to their respective black and white variants, also in HEX.
