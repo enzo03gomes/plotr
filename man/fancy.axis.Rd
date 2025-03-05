@@ -7,6 +7,7 @@
 fancy.axis(
   side = 1,
   space.main,
+  tk.main,
   number.sub = 0,
   lim,
   tk.size = -0.05,
@@ -19,7 +20,9 @@ fancy.axis(
 
 \item{space.main}{spacing between main ticks}
 
-\item{number.sub}{number of sub ticks between main ticks. If a vector is prodided, smaller sub ticks are plotted between sub ticks}
+\item{tk.main}{placement of main ticks. Overrides space.main}
+
+\item{number.sub}{number of sub ticks between main ticks. If a vector is provided, smaller sub ticks are plotted between sub ticks}
 
 \item{lim}{axis limits}
 
