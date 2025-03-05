@@ -2,7 +2,8 @@
 #'
 #' @param side which side to plot the axis
 #' @param space.main spacing between main ticks
-#' @param number.sub number of sub ticks between main ticks. If a vector is prodided, smaller sub ticks are plotted between sub ticks
+#' @param tk.main placement of main ticks. Overrides space.main
+#' @param number.sub number of sub ticks between main ticks. If a vector is provided, smaller sub ticks are plotted between sub ticks
 #' @param lim axis limits
 #' @param plot.lab If TRUE, plots tick labels. Otherwise, tick labels are not plotted
 #' @param tk.lab labels for main ticks
@@ -10,7 +11,7 @@
 #'
 #' @export
 
-fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05,
+fancy.axis = function(side = 1, space.main, tk.main, number.sub = 0, lim, tk.size = -0.05,
                       plot.lab = TRUE, tk.lab){
 
   #check if inputs are valid
@@ -19,7 +20,13 @@ fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05
   if(!missing(space.main)){
     if(!is.number(space.main) | length(space.main) != 1) stop("invalid space.main")
   }else{
-    stop("missing space.main with no defaults")
+
+    if(!missing(tk.main)){
+      if(!is.number(tk.main)) stop("invalid tk.main")
+    }else{
+      stop("missing space.main or tk.main with no defaults")
+    }
+
   }
 
   if(any(number.sub %% 1 != 0)) stop("invalid number.sub")
@@ -27,7 +34,11 @@ fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05
   if(!missing(lim)){
     if(!is.number(lim) | length(lim) != 2) stop("invalid lim")
   }else{
-    stop("missing lim with no defaults")
+    if(missing(tk.main)){
+      stop("missing lim with no defaults")
+    }else{
+      lim = range(tk.main)
+    }
   }
 
   if(!is.number(tk.size)) stop("invalid tk.size")
@@ -38,9 +49,15 @@ fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05
     if(!length(tk.lab) != space.main) stop("length(tk.lab) must be equal to space.main")
   }
 
+
   #main ticks
-  tk = seq(lim[1], lim[2], by = space.main)
-  space = diff(lim)/(length(tk)-1)
+  if(missing(tk.main)){
+    tk = seq(lim[1], lim[2], by = space.main)
+    space = diff(lim)/(length(tk)-1)
+  }else{
+    tk = tk.main
+    space = diff(lim)/(length(tk)-1)
+  }
 
   if(missing(tk.lab)){
     if(plot.lab){
@@ -48,7 +65,6 @@ fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05
     }else{
       tk.lab = rep("", length(tk))
     }
-
   }
 
   axis(side, at = tk, labels = tk.lab)
@@ -71,4 +87,3 @@ fancy.axis = function(side = 1, space.main, number.sub = 0, lim, tk.size = -0.05
   }
 
 }
-
