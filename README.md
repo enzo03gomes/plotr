@@ -26,7 +26,7 @@ Functions added include:
 - `set.stdpar()` to set the current `par` as a preset
 - `save.par()` to store the current `par`
 - `read.par()` to load a stored `par`
-- `stdpar()` to use presets
+- `std.par()` to use presets
 
 
 ## Color Picking Tools
