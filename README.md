@@ -34,6 +34,7 @@ These tools include:
 - `view.palette()` to view available palettes
 - `load.palette()` to use a preset palette
 - `save.palette()` to save a vector of HEX as a preset
+- `delete.palette()` to delete a preset
 - `mod.palette()` to modify a preset 
 
 Color picking tools are also available:
