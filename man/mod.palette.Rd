@@ -17,5 +17,5 @@ mod.palette(palette, new.name, new.colors)
 Modifies name and/or colors of a palette preset. Palettes provided with the package cannot be modified.
 WARNING: changes to palettes are permanent and cannot be reverted.
 }
-\keyword{Color}
-\keyword{Palette}
+\keyword{"Color}
+\keyword{Palette"}
