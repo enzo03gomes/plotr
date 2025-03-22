@@ -29,8 +29,15 @@ Functions added include:
 - `std.par()` to use presets
 
 
-## Color Picking Tools
+## Color Management Tools
 These tools include:
+- `view.palette()` to view available palettes
+- `load.palette()` to use a preset palette
+- `save.palette()` to save a vector of HEX as a preset
+- `mod.palette()` to modify a preset 
+
+Color picking tools are also available:
 - `blind.palette()` to modify a palette to be more colorblind friendy
 - `bnw.palette()` to turn a palette black and white
-- `palette()` to use a preset palette
+
+**WARNING: user save presets are currently not preserved through package updates. To be fixed soon.**
