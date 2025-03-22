@@ -15,5 +15,5 @@ Loads a palette preset to use.
 \references{
 Palettes "IBM", "wong" and "tol" from \url{https://davidmathlogic.com/colorblind/}
 }
-\keyword{Color}
-\keyword{Palette}
+\keyword{"Color}
+\keyword{Palette"}

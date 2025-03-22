@@ -14,5 +14,5 @@ save.palette(palette, col)
 \description{
 Saves a vector of 6-digit HEX values as a palette.
 }
-\keyword{Color}
-\keyword{Palette}
+\keyword{"Color}
+\keyword{Palette"}

@@ -13,5 +13,5 @@ delete.palette(palette)
 Deletes a palette preset. Palettes provided with the package cannot be deleted.
 WARNING: changes to palettes are permanent and cannot be reverted.
 }
-\keyword{Color}
-\keyword{Palette}
+\keyword{"Color}
+\keyword{Palette"}
