@@ -13,3 +13,5 @@ view.palette(palette)
 View palette presets available by printing them on the console.
  Colors can be assigned to a variable if `palette` is not empty.
 }
+\keyword{Color}
+\keyword{Palette}

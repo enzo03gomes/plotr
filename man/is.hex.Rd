@@ -14,3 +14,4 @@ is.hex(color, digit6 = TRUE)
 \description{
 Check if all values in vector are a valid HEX
 }
+\keyword{Utilities}

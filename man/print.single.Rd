@@ -14,3 +14,4 @@
 \description{
 Workhorse function to print color palettes. Not available to users.
 }
+\keyword{Workhorse}

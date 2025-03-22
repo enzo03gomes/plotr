@@ -8,7 +8,7 @@
 #' @param package.envir package-level environment
 #' @param user.envir user-level environment
 #'
-#'
+#' @keywords Workhorse
 
 unpack = function(){
   envir = parent.frame()

@@ -45,6 +45,7 @@ assign("current.palette", value = list(), envir = .colorEnvir)
 #' @param p palette list
 #' @param palette name of palette to use
 #'
+#' @keywords Workhorse
 
 print.single = function(p, palette){
   if(missing(palette)){

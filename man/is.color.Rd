@@ -15,3 +15,4 @@ TRUE if all elements can be translated into an RGB color, FALSE otherwise
 \description{
 Check if all values in vector are coercible to RGB.
 }
+\keyword{Utilities}

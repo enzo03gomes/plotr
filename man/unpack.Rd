@@ -16,3 +16,4 @@ unpack()
 \description{
 Moves all parameters (loaded palette, plot settings and graphical parameters) to the parent environment.
 }
+\keyword{Workhorse}

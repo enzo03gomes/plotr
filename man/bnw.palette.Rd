@@ -12,3 +12,5 @@ bnw.palette(color)
 \description{
 Converts a vector of HEX values to their respective black and white variants, also in HEX.
 }
+\keyword{Color}
+\keyword{Palette}

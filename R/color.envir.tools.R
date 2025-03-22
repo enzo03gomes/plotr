@@ -6,6 +6,10 @@
 #'
 #' @param palette name of color palette. Use `view.palette()` to see available color palettes.
 #'
+#' @references
+#' Palettes "IBM", "wong" and "tol" from \url{https://davidmathlogic.com/colorblind/}
+#'
+#' @keywords Color Palette
 #' @export
 
 
@@ -36,6 +40,7 @@ load.palette = function(palette){
 #' Prints the palette currently loaded
 #'
 #'
+#' @keywords Color Palette
 #' @export
 
 this.palette = function(){
@@ -53,6 +58,7 @@ this.palette = function(){
 #'
 #' @param palette name of color palette. If empty, all palettes are shown.
 #'
+#' @keywords Color Palette
 #' @export
 
 view.palette = function(palette){
@@ -96,6 +102,7 @@ view.palette = function(palette){
 #' @param new.name new palette name.
 #' @param new.colors colors to assign to palette.
 #'
+#' @keywords Color Palette
 #' @export
 
 mod.palette = function(palette, new.name, new.colors){
@@ -160,6 +167,7 @@ mod.palette = function(palette, new.name, new.colors){
 #' @param palette name of palette
 #' @param col vector of 6-digit HEX values
 #'
+#' @keywords Color Palette
 #' @export
 
 save.palette = function(palette, col){
@@ -197,6 +205,7 @@ save.palette = function(palette, col){
 #'
 #' @param palette palette to delete
 #'
+#' @keywords Color Palette
 #' @export
 
 

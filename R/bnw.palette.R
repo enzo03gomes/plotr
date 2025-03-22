@@ -5,6 +5,7 @@
 #'
 #' @param color vector of HEX
 #'
+#' @keywords Color Palette
 #' @export
 
 bnw.palette = function(color){

@@ -9,3 +9,5 @@ this.palette()
 \description{
 Prints the palette currently loaded
 }
+\keyword{Color}
+\keyword{Palette}

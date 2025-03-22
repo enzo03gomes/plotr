@@ -6,6 +6,8 @@
 #'
 #' @param color vector of colors to test
 #' @return TRUE if all elements can be translated into an RGB color, FALSE otherwise
+#'
+#' @keywords Utilities
 #' @export
 
 is.color = function(color){
@@ -25,6 +27,7 @@ is.color = function(color){
 #' @param color vector of colors to test
 #' @param digit6 if `TRUE`, tests for 6-digit HEX colors; otherwise, tests for 3-digit. `TRUE` by default.
 #'
+#' @keywords Utilities
 #' @export
 
 is.hex = function(color, digit6 = TRUE){
